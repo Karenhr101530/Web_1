@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0b3b;
+    color: #fff;
+    height: 100vh;
+  }
+  
+  /* Barra de navegación */
+  header {
+    position: fixed; /* Fija el elemento en la pantalla */
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    background-color: #0b0b3b;
+    z-index: 1000; /* Asegura que esté por encima del resto de los elementos */
+    padding: 10px 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+  }
+  
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .logo span {
+    color: #8c52ff;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #8c52ff;
+  }
+
+  
+  /* Sección principal */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: #fff;
+  }
+  
+  .hero h1 span {
+    color: #8c52ff;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #8c52ff;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #6a35cc;
+  }
+  
+ /* Sección Bootcamps */
+.bootcamps {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #0b0b3b; /* Fondo oscuro */
+    color: #fff;
+  }
+  
+  .bootcamps h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .bootcamps h2 span {
+    color: #8c52ff; /* Color destacado */
+  }
+  
+  .bootcamps p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #ddd;
+  }
+  
+  /* Contenedor de tarjetas */
+  .bootcamp-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .bootcamp-card {
+    background-color: #1e1e5a; /* Color de tarjeta */
+    border-radius: 10px;
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .bootcamp-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .bootcamp-card h3 {
+    margin: 15px 0 10px;
+    color: #8c52ff;
+  }
+  
+  .bootcamp-card p {
+    font-size: 1rem;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    color: #ddd;
+  }
+  
+  .bootcamp-card a {
+    display: inline-block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #8c52ff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .bootcamp-card a:hover {
+    color: #b38aff;
+  }
+  
+  .bootcamp-card:hover {
+    transform: translateY(-10px); /* Efecto al pasar el ratón */
+  }  
+
+  /* Sección Modalidades de Formación */
+  .modalidades {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f5ff; /* Fondo claro */
+    color: #0b0b3b;
+  }
+  
+  .modalidades h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #0b0b3b;
+  }
+  
+  /* Contenedor de tarjetas */
+  .modalidad-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .modalidad-card {
+    background-color: #2e2e8b; /* Fondo tarjeta */
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .modalidad-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .modalidad-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .modalidad-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #8c52ff;
+  }
+  
+  .modalidad-card p {
+    font-size: 1rem;
+    color: #ddd;
+  }
+  
+  /* Estilos de la sección de Horarios */
+.horarios {
+    background-color: #f5f5ff; /* Fondo claro */
+    color: #0b0b3b; /* Texto principal */
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .horarios h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #0b0b3b;
+  }
+  
+  .horarios-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .horario-card {
+    background-color: #2e2e8b; /* Fondo de tarjeta */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .horario-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .horario-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .horarios-intensivos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .horario-ultra {
+    background-color: #1e1e5a;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  
+  .horario-ultra:hover {
+    transform: translateY(-10px);
+  }
+  
+  .horario-ultra h3 {
+    color: #8c52ff;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+  }
+  
+  /* Estilos del Formulario */
+.formulario-inscripcion {
+    background-color: #1e1e5a; /* Color similar a las tarjetas */
+    color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .formulario-inscripcion h2 {
+    text-align: center;
+    color: #8c52ff;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  form input[type="file"] {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  form input:focus {
+    outline: 2px solid #8c52ff;
+  }
+  
+  form button {
+    background-color: #8c52ff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #6a35cc;
+  }
+  
